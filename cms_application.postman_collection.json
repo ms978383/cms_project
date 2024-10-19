@@ -1,0 +1,407 @@
+{
+	"info": {
+		"_postman_id": "f37163a2-c39c-4ea0-ace6-f001f56b4353",
+		"name": "cms_application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36921392",
+		"_collection_link": "https://lively-satellite-414231.postman.co/workspace/mahesh~ad50008b-11ca-4f32-bf49-dd62bfafead0/collection/36921392-f37163a2-c39c-4ea0-ace6-f001f56b4353?action=share&source=collection_link&creator=36921392"
+	},
+	"item": [
+		{
+			"name": "/accounts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"smaheshparmar30265@gmail.com\",\r\n    \"name\": \"Mahesh Kumar Suthar\",\r\n    \"password\": \"Mahesh@123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accounts",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/accounts",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6InNtYWhlc2hwYXJtYXIzMDI2QGdtYWlsLmNvbSIsImV4cCI6MTcyOTQzODQ4MCwiaWF0IjoxNzI5MzUyMDgwfQ.NDP5JyBb1wRsqlSLbc-3NLsMElJp9LvIBS9LV1Bi56k",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"smaheshparmar3026@gmail.com\",\r\n    \"name\": \"Mahesh Suthar Kumar\",\r\n    \"password\": \"Mahesh@12\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accounts",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/accounts",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJlbWFpbCI6InNtYWhlc2hwYXJtYXIzMDI2QGdtYWlsLmNvbSIsImV4cCI6MTcyOTQzODQ4MCwiaWF0IjoxNzI5MzUyMDgwfQ.NDP5JyBb1wRsqlSLbc-3NLsMElJp9LvIBS9LV1Bi56k",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accounts",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/accounts/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"smaheshparmar30265@gmail.com\",\r\n  \"password\": \"Mahesh@123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accounts/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/me",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJlbWFpbCI6InNtYWhlc2hwYXJtYXIzMDI2NUBnbWFpbC5jb20iLCJleHAiOjE3Mjk0Mzg2NTAsImlhdCI6MTcyOTM1MjI1MH0.sVC6tv-kecJwb3eydO9p_xYgVDmO-sLVlHtuANWeP00",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"smaheshparmar3026@gmail.com\",\r\n  \"password\": \"Mahesh@123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/me",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/blog",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJlbWFpbCI6InNtYWhlc2hwYXJtYXIzMDI2NUBnbWFpbC5jb20iLCJleHAiOjE3Mjk0Mzg2NTAsImlhdCI6MTcyOTM1MjI1MH0.sVC6tv-kecJwb3eydO9p_xYgVDmO-sLVlHtuANWeP00",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/blog",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/blog",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJlbWFpbCI6InNtYWhlc2hwYXJtYXIzMDI2NUBnbWFpbC5jb20iLCJleHAiOjE3Mjk0Mzg2NTAsImlhdCI6MTcyOTM1MjI1MH0.sVC6tv-kecJwb3eydO9p_xYgVDmO-sLVlHtuANWeP00",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Sample Blog Post\",\r\n    \"description\": \"This is a sample description\",\r\n    \"content\": \"This is the content of the blog post\",\r\n    \"is_private\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/blog",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/blog/id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJlbWFpbCI6InNtYWhlc2hwYXJtYXIzMDI2NUBnbWFpbC5jb20iLCJleHAiOjE3Mjk0Mzg2NTAsImlhdCI6MTcyOTM1MjI1MH0.sVC6tv-kecJwb3eydO9p_xYgVDmO-sLVlHtuANWeP00",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/blog/6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blog",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/blog/id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJlbWFpbCI6InNtYWhlc2hwYXJtYXIzMDI2NUBnbWFpbC5jb20iLCJleHAiOjE3Mjk0Mzg2NTAsImlhdCI6MTcyOTM1MjI1MH0.sVC6tv-kecJwb3eydO9p_xYgVDmO-sLVlHtuANWeP00",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"updated Sample Blog Post\",\r\n    \"description\": \"updated This is a sample description\",\r\n    \"content\": \"updated This is the content of the blog post\",\r\n    \"is_private\": false\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/blog/6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blog",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/blog/id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJlbWFpbCI6InNtYWhlc2hwYXJtYXIzMDI2NUBnbWFpbC5jb20iLCJleHAiOjE3Mjk0Mzg2NTAsImlhdCI6MTcyOTM1MjI1MH0.sVC6tv-kecJwb3eydO9p_xYgVDmO-sLVlHtuANWeP00",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/blog/5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blog",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/like/blog_id",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJlbWFpbCI6InNtYWhlc2hwYXJtYXIzMDI2NUBnbWFpbC5jb20iLCJleHAiOjE3Mjk0Mzg2NTAsImlhdCI6MTcyOTM1MjI1MH0.sVC6tv-kecJwb3eydO9p_xYgVDmO-sLVlHtuANWeP00",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/like/6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"like",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/like/blog_id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJlbWFpbCI6InNtYWhlc2hwYXJtYXIzMDI2NUBnbWFpbC5jb20iLCJleHAiOjE3Mjk0Mzg2NTAsImlhdCI6MTcyOTM1MjI1MH0.sVC6tv-kecJwb3eydO9p_xYgVDmO-sLVlHtuANWeP00",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/like/6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"like",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
